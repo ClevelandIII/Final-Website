@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta name="author" content="Cleveland H. Williams III">
+    <meta name="description" content="A website that collects results via a quiz">
+
+    <meta property="og:image" content="pexels-pixabay-416322.jpg">
+    <meta property="og:title" content="Survey">
+    <meta property="og:description" content="A quick survey to tell us how we did!">
+
+    <title> Survey </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pexels-pixabay-416322.jpg" type="image/x-icon">
+</head>
+
+<body style="background-image: url(lightBackground.png);">
+    <form action="data.json" method="POST">
+    <fieldset>
+        <legend>Links to other pages</legend>
+        <ul>
+            <li>
+                <a href="index.html">Home Page</a> 
+            </li>
+            <li>
+                <a href="Quiz.html">Quiz</a> 
+            </li>
+            <li>
+                <a href="Survey.html">Survey</a> 
+            </li>
+        </ul>
+    </fieldset>
+
+    <p>
+        <h1>
+            THANK YOU!
+        </h1>
+
+        We appriciate you visiting our site.
+
+        <em>
+            Without users like you we could not continue.
+        </em>
+        <br><br>
+        <strong>
+            PLEASE
+        </strong>
+
+        take a minute to fill out this survey and tell us how we can do better.
+    </p>
+
+    <form action="data.json" method="POST">
+        <fieldset>
+            <legend>Survey</legend>
+            <ul>
+                <li>
+                    <label for="Name">Name:</label><input type="text" id="Name" name="user.Name"> 
+                </li>
+                <li>
+                    <label for="Email">Email:</label><input type="text" id="Email" name="user.Email">
+                </li>
+                <li>
+                    <label for="PN">Phone Number:</label><input type="text" id="PN" name="user.PN">
+                </li>
+                <li>
+                    Please tell us anything we could improve on
+                </li>
+                <li>
+                <textarea name="Instructions" id="Instructions" cols="30" rows="10" ></textarea><br>
+                </li>
+            </ul>
+            <a href="index.html" class="button">Submit</a>
+            <!--I wanted a functioning button, but if you dont like that I also have the normal button code here: <button type="submit">Submit</button> .-->
+        </fieldset>
+</body>
+</html>

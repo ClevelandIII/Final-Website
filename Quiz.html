@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta name="author" content="Cleveland H. Williams III">
+    <meta name="description" content="A website that collects results via a quiz">
+
+    <meta property="og:image" content="pexels-pixabay-416322.jpg">
+    <meta property="og:title" content="Quiz">
+    <meta property="og:description" content="A quiz to collect information">
+
+    <title> Trivia Night </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pexels-pixabay-416322.jpg" type="image/x-icon">
+</head>
+
+<body style="background-image: url(lightBackground.png);">
+    <form action="data.json" method="POST">
+    <fieldset>
+        <legend>Links to other pages</legend>
+        <ul>
+            <li>
+                <a href="index.html">Home Page</a> 
+            </li>
+            <li>
+                <a href="Quiz.html">Quiz</a> 
+            </li>
+            <li>
+                <a href="Survey.html">Survey</a> 
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Multiple Choice</legend>
+        <p>
+            What is the <em>scientific</em> name of H<sub>2</sub>0?
+        </p>
+        <ul>
+            <li>
+                <input type="radio" id="Air" name="H20">
+                <label for="Air">Air</label>
+            </li>
+            <li>
+                <input type="radio" id="Fire" name="H20">
+                <label for="Fire">Fire</label>
+            </li>
+            <li>
+                <input type="radio" id="Earth" name="H20">
+                <label for="Earth">Earth</label>
+            </li>
+            <li>
+                <input type="radio" id="Water" name="H20">
+                <label for="Water">Water</label>
+            </li>
+        </ul>
+
+        <p>
+            What is the <em>most popular</em> name for December 25<sup>th</sup>?
+        </p>
+        <ul>
+            <li>
+                <input type="radio" id="Christmas" name="25">
+                <label for="Christmas">Christmas</label>
+            </li>
+            <li>
+                <input type="radio" id="Thanksgiving" name="25">
+                <label for="Thanksgiving">Thanksgiving</label>
+            </li>
+            <li>
+                <input type="radio" id="Valentine's Day" name="25">
+                <label for="Valentine's Day">Valentine's Day</label>
+            </li>
+            <li>
+                <input type="radio" id="Holloween" name="25">
+                <label for="Holloween">Holloween</label>
+            </li>
+        </ul>
+
+        <p>
+            What of the following are the chemical code for <strong>sugar</strong>?
+        </p>
+        <ul>
+            <li>
+                <input type="checkbox" id="C12H22O11" name="C12H22O11" value="C12H22O11">
+                <label for="C12H22O11"> C<sub>12</sub>H<sub>22</sub>O<sub>11</sub> </label>
+            </li>
+            <li>
+                <input type="checkbox" id="C5H10O5" name="C5H10O5" value="C5H10O5">
+                <label for="C5H10O5"> C<sub>5</sub>H<sub>10</sub>O<sub>5</sub> </label>
+            </li>
+            <li>
+                <input type="checkbox" id="C6H12O6" name="C6H12O6" value="C6H12O6">
+                <label for="C6H12O6"> C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> </label>
+            </li>
+            <li>
+                <input type="checkbox" id="C11H22O11" name="C11H22O11" value="C11H22O11">
+                <label for="C11H22O11"> C<sub>11</sub>H<sub>22</sub>O<sub>11</sub> </label>
+            </li>
+        </ul>
+
+        <p>
+            Which of the following are <strong>even</strong>?
+        </p>
+        <ul>
+            <li>
+                <input type="checkbox" id="1" name="1" value="1">
+                <label for="1"> 1<sup>st</sup> </label>
+            </li>
+            <li>
+                <input type="checkbox" id="2" name="2" value="2">
+                <label for="2"> 2<sup>nd</sup> </label>
+            </li>
+            <li>
+                <input type="checkbox" id="3" name="3" value="3">
+                <label for="3"> 3<sup>rd</sup> </label>
+            </li>
+            <li>
+                <input type="checkbox" id="4" name="4" value="4">
+                <label for="4"> 4<sup>th</sup> </label>
+            </li>
+        </ul>
+        <a href="Survey.html" class="button">Submit</a>
+        <!--I wanted a functioning button, but if you dont like that I also have the normal button code here: <button type="submit">Submit</button> .-->
+    </fieldset>
+    </form>
+
+</body>
+</html>

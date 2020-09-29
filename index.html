@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta name="author" content="Cleveland H. Williams III">
+    <meta name="description" content="A website that collects results via a quiz">
+
+    <meta property="og:image" content="pexels-pixabay-416322.jpg">
+    <meta property="og:title" content="Home Page">
+    <meta property="og:description" content="The page to sign in.">
+
+    <title> Home Page </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pexels-pixabay-416322.jpg" type="image/x-icon">
+</head>
+
+<body style="background-image: url(lightBackground.png);">
+    <form action="data.json" method="POST">
+    <fieldset>
+        <legend>Links to other pages</legend>
+        <ul>
+            <li>
+                <a href="index.html">Home Page</a> 
+            </li>
+            <li>
+                <a href="Quiz.html">Quiz</a> 
+            </li>
+            <li>
+                <a href="Survey.html">Survey</a> 
+            </li>
+        </ul>
+    </fieldset>
+
+    <p>
+        <h1>
+            Welcome to My Site!
+        </h1>
+
+        <em>
+            On this site you can take a short quiz and then you can fill out our survey.
+        </em>
+        <br><br>
+        <strong>
+            Only way we can get better is by hearing what you have to say!
+        </strong>
+        <br><br>
+        <h3>
+            Log in Below
+        </h3>
+    </p>
+
+    <form action="data.json" method="POST">
+        <fieldset>
+            <legend>User Information</legend>
+            <ul>
+                <li>
+                    <label for="Username">User Name:</label><input type="text" id="username" name="user.name"> 
+                </li>
+                <li>
+                    <label for="PW">Password:</label><input type="password" id="PW" name="user.PW">
+                </li>
+                <li>
+                    <label for="UIN">User Identification Number:</label><input type="text" id="UIN" name="user.UIN">
+                </li>
+                <li>
+                    <label for="TD">Today's Date:</label><input type="text" id="TD" name="user.TD">
+                </li>
+            </ul>
+            <a href="Quiz.html" class="button">Submit</a>
+            <!--I wanted a functioning button, but if you dont like that I also have the normal button code here: <button type="submit">Submit</button> .-->
+        </fieldset>
+</body>
+</html>
